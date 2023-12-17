@@ -4,7 +4,7 @@ import {Entity,Column,PrimaryGeneratedColumn} from 'typeorm'
 export class UserEntity{
 
     @PrimaryGeneratedColumn()
-    id:string
+    id:number
 
     @Column()
     fullName:string

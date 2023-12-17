@@ -12,7 +12,15 @@ export class UsersService {
         return this.repository.save(dto)
     }
 
+    async findById(id:number){
+        return this.repository.findOneBy({id})
+    }
+
     async getUserByEmail(email:string){
         return this.repository.findOneBy({email})
+    }
+
+    async getAll(){
+        return this.repository.find()
     }
 }
